@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { FiLogIn } from 'react-icons/fi';
 
 import './styles.css';
-
+import Logo from '../../Assets/logo.png'
 
 export default function Logon() {
 
@@ -22,7 +22,7 @@ export default function Logon() {
                     <input 
                         placeholder="Password"
                     />
-                    <button className="button" type="submit">Entrar</button>
+                    <button  className="button" type="submit">Entrar</button>
 
                     <Link className="link" to="/register" className="link">
                         <FiLogIn size={16} color="#fff" />
@@ -30,6 +30,7 @@ export default function Logon() {
                     </Link>
                 </form>
             </section>
+            <img style={{width: '70%'}} src={Logo} alt="Secrets" />
         </div>
     )
 }
